@@ -71,8 +71,11 @@ public class Tabeller {
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-
-		return tabell;
+		if (tabell != null) {
+			return tall;
+		} else {
+			return -1;
+		}
 	}
 
 	// f)

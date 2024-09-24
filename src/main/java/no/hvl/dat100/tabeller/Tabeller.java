@@ -13,6 +13,9 @@ public class Tabeller {
 		System.out.println("tilStreng for tabell1:" + tilStreng(tabell1));
 		
 		System.out.println("Summen av tabell1:" + summer(tabell1));
+		
+		System.out.println("Finnes 89 i tabell1? " + finnesTall(tabell1, 89));
+		System.out.println("Finnes 1 i tabell1? " + finnesTall(tabell1, 1));
 	} 
 
 	// a)
@@ -54,10 +57,14 @@ public class Tabeller {
 
 	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden finnesTall ikke implementert");
-
+		if (tabell != null) {
+			for (int t: tabell) {
+				if (t == tall) {
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 
 	// e)

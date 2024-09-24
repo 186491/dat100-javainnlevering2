@@ -6,12 +6,12 @@ public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
 
-		System.out.println("[");
+		System.out.print("[");
 		for (int i = 0; i < tabell.length; i ++) {
-			System.out.println(tabell[i] + " ");
+			System.out.print(tabell[i] + " ");
 		}
 		
-		System.out.println("]");
+		System.out.print("]");
 	}
 
 	// b)

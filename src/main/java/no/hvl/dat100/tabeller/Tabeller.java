@@ -2,6 +2,9 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
+	public static void main(String[] args); {
+		System.out.print("tabell");
+	}
 	// a)
 	public static void skrivUt(int[] tabell) {
 
@@ -21,13 +24,12 @@ public class Tabeller {
 		for (int i = 0; i < tabell.length; i++) {
 			result += tabell[i];
 			if (i < tabell.length - 1) {
-				result += ", ";
+				result += ",";
 			}
 		}
 		
 		result += "]";
 		return result;
-		
 	}
 
 	// c)

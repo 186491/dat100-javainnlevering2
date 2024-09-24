@@ -20,7 +20,6 @@ class TabellerEnhetsTests {
 
 		tabell2 = new int[1];
 		tabell2[0] = 1;
-
 		tabell3 = new int[0];
 
 	}

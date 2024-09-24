@@ -2,9 +2,18 @@ package no.hvl.dat100.tabeller;
 
 public class Tabeller {
 
-	public static void main(String[] args); {
-		System.out.print("tabell");
-	}
+	public static void main(String[] args) {
+		int [] tabell1 = {42, 67, 89};
+		int [] tabell2 = {15, 23, 42, 88};
+		
+		System.out.print("Utskrift av tabell1:");
+		skrivUt(tabell1);
+		System.out.println();
+		
+		System.out.println("tilStreng for tabell1:" + tilStreng(tabell1));
+		
+	} 
+
 	// a)
 	public static void skrivUt(int[] tabell) {
 

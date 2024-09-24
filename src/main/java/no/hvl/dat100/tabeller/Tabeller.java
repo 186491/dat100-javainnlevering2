@@ -10,7 +10,6 @@ public class Tabeller {
 		System.out.print("Utskrift av tabell1:");
 		skrivUt(tabell1);
 		System.out.println();
-		
 		//b)
 		System.out.println("tilStreng for tabell1:" + tilStreng(tabell1));
 		//c
@@ -18,6 +17,14 @@ public class Tabeller {
 		//d)
 		System.out.println("Finnes 89 i tabell1? " + finnesTall(tabell1, 89));
 		System.out.println("Finnes 1 i tabell1? " + finnesTall(tabell1, 1));
+		//e)
+		System.out.println();
+		//f)
+		System.out.println("Reversert tabell1:" + tilStreng(reverser(tabell1)));
+		//g)
+		System.out.println();
+		//h)
+		System.out.println();
 	} 
 
 	// a)
@@ -81,8 +88,11 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+		int [] reversert = new int[tabell.length];
+		for (int i = 0; i < tabell.length; i++) {
+			reversert[i] = tabell[tabell.length -1 -i];
+		}
+		return reversert;
 	}
 
 	// g)

@@ -12,6 +12,7 @@ public class Tabeller {
 		
 		System.out.println("tilStreng for tabell1:" + tilStreng(tabell1));
 		
+		System.out.println("Summen av tabell1:" + summer(tabell1));
 	} 
 
 	// a)
@@ -44,8 +45,11 @@ public class Tabeller {
 	// c)
 	public static int summer(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden summer ikke implementert");
+		int sum = 0;
+		for (int tall: tabell) {
+			sum += tall;
+		}
+		return sum;
 	}
 
 	// d)

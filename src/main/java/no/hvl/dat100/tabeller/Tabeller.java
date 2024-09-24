@@ -20,7 +20,7 @@ public class Tabeller {
 		//e)
 		System.out.println();
 		//f)
-		System.out.println();
+		System.out.println("Reversert tabell1:" + tilStreng(reverser(tabell1)));
 		//g)
 		System.out.println();
 		//h)
@@ -85,8 +85,11 @@ public class Tabeller {
 	// f)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+		int [] reversert = new int[tabell.length];
+		for (int i = 0; i < tabell.length; i++) {
+			reversert[i] = tabell[tabell.length -1 -i];
+		}
+		return reversert;
 	}
 
 	// g)

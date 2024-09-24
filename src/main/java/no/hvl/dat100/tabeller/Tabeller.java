@@ -10,7 +10,6 @@ public class Tabeller {
 		System.out.print("Utskrift av tabell1:");
 		skrivUt(tabell1);
 		System.out.println();
-		
 		//b)
 		System.out.println("tilStreng for tabell1:" + tilStreng(tabell1));
 		//c
@@ -18,6 +17,14 @@ public class Tabeller {
 		//d)
 		System.out.println("Finnes 89 i tabell1? " + finnesTall(tabell1, 89));
 		System.out.println("Finnes 1 i tabell1? " + finnesTall(tabell1, 1));
+		//e)
+		System.out.println();
+		//f)
+		System.out.println();
+		//g)
+		System.out.println();
+		//h)
+		System.out.println();
 	} 
 
 	// a)

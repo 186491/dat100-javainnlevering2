@@ -6,14 +6,16 @@ public class Tabeller {
 		int [] tabell1 = {42, 67, 89};
 		int [] tabell2 = {15, 23, 42, 88};
 		
+		//a)
 		System.out.print("Utskrift av tabell1:");
 		skrivUt(tabell1);
 		System.out.println();
 		
+		//b)
 		System.out.println("tilStreng for tabell1:" + tilStreng(tabell1));
-		
+		//c
 		System.out.println("Summen av tabell1:" + summer(tabell1));
-		
+		//d)
 		System.out.println("Finnes 89 i tabell1? " + finnesTall(tabell1, 89));
 		System.out.println("Finnes 1 i tabell1? " + finnesTall(tabell1, 1));
 	} 

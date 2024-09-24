@@ -18,7 +18,7 @@ public class Tabeller {
 		System.out.println("Finnes 89 i tabell1? " + finnesTall(tabell1, 89));
 		System.out.println("Finnes 1 i tabell1? " + finnesTall(tabell1, 1));
 		//e)
-		System.out.println();
+		System.out.println("Første index i tabell som inneholder tall: " + posisjonTall(tabell1, 67));
 		//f)
 		System.out.println("Reversert tabell1:" + tilStreng(reverser(tabell1)));
 		//g)
@@ -78,13 +78,16 @@ public class Tabeller {
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
-		if (tabell != null) {
-			return tall;
-		} else {
-			return -1;
+		
+		for (int i = 0; i < tabell.length; i++) {
+			if (tabell[i] == tall) {
+				return i;
+			}
 		}
+		return -1;
+		
 	}
-
+	
 	// f)
 	public static int[] reverser(int[] tabell) {
 

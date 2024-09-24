@@ -4,7 +4,7 @@ public class Tabeller {
 
 	public static void main(String[] args) {
 		int [] tabell1 = {42, 67, 89};
-		int [] tabell2 = {15, 23, 42, 88};
+		int [] tabell2 = {17, 12, 88, 44};
 		
 		//a)
 		System.out.print("Utskrift av tabell1:");
@@ -22,7 +22,8 @@ public class Tabeller {
 		//f)
 		System.out.println("Reversert tabell1:" + tilStreng(reverser(tabell1)));
 		//g)
-		System.out.println();
+		System.out.println("Er tabell1 sortert? " + erSortert(tabell1));
+		System.out.println("Er tabell2 sortert? " + erSortert(tabell2));
 		//h)
 		System.out.println();
 	} 
@@ -101,15 +102,16 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+		for(int i = 1; i < tabell.length; i++) {
+			if(tabell [i] < tabell[i - 1]) {
+				return false;
+			}
+		}
+		return true;
 	}
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
-
+		
 	}
 }

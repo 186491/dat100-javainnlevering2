@@ -25,7 +25,10 @@ public class Tabeller {
 		System.out.println("Er tabell1 sortert? " + erSortert(tabell1));
 		System.out.println("Er tabell2 sortert? " + erSortert(tabell2));
 		//h)
-		System.out.println();
+		int[] nyTabell = settSammen(tabell1, tabell2);
+		for (int i : nyTabell) {
+			System.out.print(i + ", ");
+		}
 	} 
 
 	// a)
@@ -85,8 +88,7 @@ public class Tabeller {
 				return i;
 			}
 		}
-		return -1;
-		
+		return -1;	
 	}
 	
 	// f)
@@ -113,5 +115,20 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 		
-	}
+		int size1 = tabell1.length;
+		int size2 = tabell2.length;
+		int size3 = size1 + size2;
+		
+		int [] nyTabell = new int[size3];
+		
+		for (int i = 0; i < size1; i++) {
+			nyTabell[i] = tabell1[i];
+		}
+		
+		for (int i = 0; i < size2; i++) {
+			nyTabell[size1 + i] = tabell2[i];
+		}
+			
+		return nyTabell;
+		}
 }

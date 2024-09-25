@@ -19,6 +19,10 @@ public class Tabeller {
 		System.out.println("Finnes 1 i tabell1? " + finnesTall(tabell1, 1));
 		//e)
 		System.out.println("Første index i tabell som inneholder tall: " + posisjonTall(tabell1, 67));
+		//Usikker på om det er riktig å skrive allerede her at det er "første indexen i tabellen dom inneholder tall?
+		//Du skal finne posisjon... og du gir jo et tall i tabellen (67). 
+		//Så kanskje heller skrive: Posisjonen til 67 i tabell1 er: 
+		//men må skrive return: i+1 for at den ikke skulle starte å telle fra 0.
 		//f)
 		System.out.println("Reversert tabell1:" + tilStreng(reverser(tabell1)));
 		//g)
@@ -55,7 +59,7 @@ public class Tabeller {
 		}
 		
 		result += "]";
-		return result;
+	  	return result;
 	}
 
 	// c)
@@ -85,7 +89,7 @@ public class Tabeller {
 		
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall) {
-				return i;
+				return i; //må skrive i+1 for at første posisjon ikke er 0, men starter på 1.
 			}
 		}
 		return -1;	

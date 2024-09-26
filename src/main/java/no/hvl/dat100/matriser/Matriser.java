@@ -51,11 +51,10 @@ public class Matriser {
 					result += " ";
 				}
 			}
-			result += " \\n";
+			result += " \n";
 		}
 		return result;
 	}
-//	noe er feil i JUnit test "Error: expected <123  456  789> but was <1 2 3 \n4 5 6 \n7 8 9 \n> skal se på det senere
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {

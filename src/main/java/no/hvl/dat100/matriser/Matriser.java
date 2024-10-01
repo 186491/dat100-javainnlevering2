@@ -25,9 +25,7 @@ public class Matriser {
 		skrivUt(skalertMatrise);
 		//d)
 		System.out.println("Er matrise1 lik matrise2? " + erLik(matrise1, matrise2));
-		//e)
-		//f)
-		
+	
 	}
 	// a)
 	public static void skrivUt(int[][] matrise) {
@@ -84,21 +82,4 @@ public class Matriser {
 		}
 		return true; 
 	}	
-	
-	// e)
-	public static int[][] speile(int[][] matrise) {
-
-		// TODO
-
-		throw new UnsupportedOperationException("Metoden speile ikke implementert");
-	
-	}
-
-	// f)
-	public static int[][] multipliser(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
-	
-	}
 }

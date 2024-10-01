@@ -85,7 +85,7 @@ public class Tabeller {
 		
 		for (int i = 0; i < tabell.length; i++) {
 			if (tabell[i] == tall) {
-				return i + 1; //Slik at tabellen begynner på 1, og ikke 0
+				return i;
 			}
 		}
 		return -1;	
@@ -105,7 +105,7 @@ public class Tabeller {
 	public static boolean erSortert(int[] tabell) {
 
 		for(int i = 1; i < tabell.length; i++) {
-			if(tabell [i] < tabell[i - 1]) {
+	 		if(tabell [i] < tabell[i - 1]) {
 				return false;
 			}
 		}
